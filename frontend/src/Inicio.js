@@ -6,7 +6,7 @@ function Inicio(){
     return(
         <div>
         <Encabezado/>
-        <Contacto/>a
+        <Contacto/>
         <Nosotros/>
         </div>
     )

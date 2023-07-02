@@ -4,12 +4,33 @@ import {Link} from "react-router-dom";
 function Encabezado(){
     return(
      <header>
-      <h1>Patito SA de CV</h1>
-       <nav>
-        <link to="/">Inicio</link>
-        <link to="/Contacto">Contacto</link>
-        <link to="/Nosotros">Nosotrosa</link>
-       </nav>
+      <nav className="menu">
+  <ul>
+    <li>
+      <a href="#">INICIO</a>
+    </li>
+    <li>
+      <a href="#">PRODUCTOS</a>
+    </li>
+    <li>
+      <a href="#">PROMOCIONES</a>
+    </li>
+    <li>
+      <a href="#">¿QUIENES SOMOS?</a>
+    </li>
+    <li>
+      <a href="cuenta.html">
+        <img className="carrito" src="IMG\usuario-de-perfil.png" />
+      </a>
+    </li>
+    <li className="active">
+      <a href="carrito.html">
+        <img className="carrito" src="IMG\carrito-de-compras.png" />
+      </a>
+    </li>
+  </ul>
+</nav>
+
       </header>
     )
 }
